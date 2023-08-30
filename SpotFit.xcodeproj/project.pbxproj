@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7119CAE52A9E526D002314DE /* ApiRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119CAE42A9E526D002314DE /* ApiRequests.swift */; };
+		71930F3E2A9EDEBD00769745 /* CardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71930F3D2A9EDEBD00769745 /* CardResponse.swift */; };
+		71930F402A9EDEE800769745 /* CardPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71930F3F2A9EDEE800769745 /* CardPrice.swift */; };
+		71930F422A9EDF2C00769745 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71930F412A9EDF2C00769745 /* CardData.swift */; };
+		71930F442A9EDF4100769745 /* CardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71930F432A9EDF4100769745 /* CardImage.swift */; };
+		71930F462A9EDF4B00769745 /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71930F452A9EDF4B00769745 /* CardSet.swift */; };
+		71930F482A9EDFFF00769745 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71930F472A9EDFFF00769745 /* Music.swift */; };
+		71930F4B2A9EE62300769745 /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71930F4A2A9EE62300769745 /* UIImageViewExt.swift */; };
 		CECE55492A9405D3006EEE37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE55482A9405D3006EEE37 /* AppDelegate.swift */; };
 		CECE554B2A9405D3006EEE37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE554A2A9405D3006EEE37 /* SceneDelegate.swift */; };
 		CECE55522A9405D4006EEE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECE55512A9405D4006EEE37 /* Assets.xcassets */; };
 		CECE55552A9405D4006EEE37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECE55532A9405D4006EEE37 /* LaunchScreen.storyboard */; };
 		CECE555E2A9418A7006EEE37 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE555D2A9418A7006EEE37 /* MovieViewController.swift */; };
-		CECE55632A942EE8006EEE37 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE55622A942EE8006EEE37 /* MusicCell.swift */; };
-		CECE55652A943727006EEE37 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE55642A943727006EEE37 /* Music.swift */; };
+		CECE55632A942EE8006EEE37 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE55622A942EE8006EEE37 /* CardCell.swift */; };
 		CECE55752A982136006EEE37 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECE55742A982136006EEE37 /* Detail.storyboard */; };
 		CECE55782A982246006EEE37 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE55772A982246006EEE37 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7119CAE42A9E526D002314DE /* ApiRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApiRequests.swift; path = ../../../../ApiRequests.swift; sourceTree = "<group>"; };
+		71930F3D2A9EDEBD00769745 /* CardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardResponse.swift; path = ../../../../CardResponse.swift; sourceTree = "<group>"; };
+		71930F3F2A9EDEE800769745 /* CardPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardPrice.swift; path = ../../../../CardPrice.swift; sourceTree = "<group>"; };
+		71930F412A9EDF2C00769745 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardData.swift; path = ../../../../CardData.swift; sourceTree = "<group>"; };
+		71930F432A9EDF4100769745 /* CardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardImage.swift; path = ../../../../CardImage.swift; sourceTree = "<group>"; };
+		71930F452A9EDF4B00769745 /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardSet.swift; path = ../../../../CardSet.swift; sourceTree = "<group>"; };
+		71930F472A9EDFFF00769745 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Music.swift; path = ../../../../Music.swift; sourceTree = "<group>"; };
+		71930F4A2A9EE62300769745 /* UIImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewExt.swift; path = ../../../../UIImageViewExt.swift; sourceTree = "<group>"; };
 		CECE55452A9405D3006EEE37 /* SpotFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE55482A9405D3006EEE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECE554A2A9405D3006EEE37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +41,7 @@
 		CECE55542A9405D4006EEE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECE55562A9405D4006EEE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECE555D2A9418A7006EEE37 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
-		CECE55622A942EE8006EEE37 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
-		CECE55642A943727006EEE37 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		CECE55622A942EE8006EEE37 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		CECE55742A982136006EEE37 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		CECE55772A982246006EEE37 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		717E6D982A9E4978001023BE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7119CAE42A9E526D002314DE /* ApiRequests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		71930F492A9EE60C00769745 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				71930F4A2A9EE62300769745 /* UIImageViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CECE553C2A9405D3006EEE37 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +92,8 @@
 		CECE55472A9405D3006EEE37 /* SpotFit */ = {
 			isa = PBXGroup;
 			children = (
+				71930F492A9EE60C00769745 /* Extensions */,
+				717E6D982A9E4978001023BE /* API */,
 				CECE55762A98213C006EEE37 /* Detail */,
 				CECE555F2A941D25006EEE37 /* Models */,
 				CECE555C2A94187F006EEE37 /* Home */,
@@ -76,7 +108,7 @@
 		CECE555C2A94187F006EEE37 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CECE55622A942EE8006EEE37 /* MusicCell.swift */,
+				CECE55622A942EE8006EEE37 /* CardCell.swift */,
 				CECE55482A9405D3006EEE37 /* AppDelegate.swift */,
 				CECE555D2A9418A7006EEE37 /* MovieViewController.swift */,
 			);
@@ -86,7 +118,12 @@
 		CECE555F2A941D25006EEE37 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CECE55642A943727006EEE37 /* Music.swift */,
+				71930F3D2A9EDEBD00769745 /* CardResponse.swift */,
+				71930F412A9EDF2C00769745 /* CardData.swift */,
+				71930F3F2A9EDEE800769745 /* CardPrice.swift */,
+				71930F432A9EDF4100769745 /* CardImage.swift */,
+				71930F452A9EDF4B00769745 /* CardSet.swift */,
+				71930F472A9EDFFF00769745 /* Music.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,11 +209,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECE55492A9405D3006EEE37 /* AppDelegate.swift in Sources */,
+				71930F482A9EDFFF00769745 /* Music.swift in Sources */,
 				CECE554B2A9405D3006EEE37 /* SceneDelegate.swift in Sources */,
-				CECE55652A943727006EEE37 /* Music.swift in Sources */,
+				71930F442A9EDF4100769745 /* CardImage.swift in Sources */,
+				7119CAE52A9E526D002314DE /* ApiRequests.swift in Sources */,
 				CECE55782A982246006EEE37 /* DetailViewController.swift in Sources */,
 				CECE555E2A9418A7006EEE37 /* MovieViewController.swift in Sources */,
-				CECE55632A942EE8006EEE37 /* MusicCell.swift in Sources */,
+				71930F422A9EDF2C00769745 /* CardData.swift in Sources */,
+				71930F4B2A9EE62300769745 /* UIImageViewExt.swift in Sources */,
+				71930F3E2A9EDEBD00769745 /* CardResponse.swift in Sources */,
+				71930F402A9EDEE800769745 /* CardPrice.swift in Sources */,
+				71930F462A9EDF4B00769745 /* CardSet.swift in Sources */,
+				CECE55632A942EE8006EEE37 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

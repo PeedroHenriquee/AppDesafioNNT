@@ -4,15 +4,19 @@ import UIKit
 
 class MoviewViewController: UIViewController {
     
-    private let musics: [Music] = [
-        .init(title: "BLUESMAN", releaseDate: "BACO EXU DO BLUES", imageURL: "", timeMusica: ""),
-        .init(title: "PROSTURADO E CALMO", releaseDate: "LEO SANTANA", imageURL: "", timeMusica: ""),
-        .init(title: "SOLTO", releaseDate: "DJONGA", imageURL: "", timeMusica: ""),
-        .init(title: "LITTLE WING", releaseDate: "JIMI", imageURL: "", timeMusica: ""),
-        .init(title: "BIG MESS", releaseDate: "MAMUDI", imageURL: "", timeMusica: ""),
-        .init(title: "NOTION", releaseDate: "TASH SUITANA", imageURL: "", timeMusica: ""),
-        .init(title: "WAR PIGS", releaseDate: "BLACK SABBATH", imageURL: "", timeMusica: "")
-    ]
+    private var cards: [CardData] = []
+    
+    /*
+     private let musics: [Music] = [
+     .init(title: "BLUESMAN", releaseDate: "BACO EXU DO BLUES", imageURL: "", timeMusica: ""),
+     .init(title: "PROSTURADO E CALMO", releaseDate: "LEO SANTANA", imageURL: "", timeMusica: ""),
+     .init(title: "SOLTO", releaseDate: "DJONGA", imageURL: "", timeMusica: ""),
+     .init(title: "LITTLE WING", releaseDate: "JIMI", imageURL: "", timeMusica: ""),
+     .init(title: "BIG MESS", releaseDate: "MAMUDI", imageURL: "", timeMusica: ""),
+     .init(title: "NOTION", releaseDate: "TASH SUITANA", imageURL: "", timeMusica: ""),
+     .init(title: "WAR PIGS", releaseDate: "BLACK SABBATH", imageURL: "", timeMusica: "")
+     ]
+    */
     
     // 1
     //Edicao do label title
@@ -23,7 +27,7 @@ class MoviewViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 26, weight: .black)
         label.textColor = .black
         label.numberOfLines = 0
-        label.text = "Mais tocadas 2022"
+        label.text = "Lista de cartas Yu Gih Oh"
         
         return label
     }()
@@ -44,10 +48,19 @@ class MoviewViewController: UIViewController {
         setupView()
     }
     
-    private func setupView(){
+    private func setupView() {
         view.backgroundColor = .white
         addViewsInHierarchy()
         setupConstraints()
+        
+        Task {
+            do {
+                try await fetchYuGiOhCards()
+            } catch {
+                print("Erro: \(error)")
+            }
+        }
+        
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -80,15 +93,24 @@ class MoviewViewController: UIViewController {
         ])
     }
     
+    private func fetchYuGiOhCards() async throws -> Void {
+        let request = ApiRequests()
+        self.cards = try await request.fetchYuGiOhCards()
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
+}
+
 extension MoviewViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection  section: Int) -> Int {
-        musics.count
+        cards.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = MusicCell()
-        let music = musics[indexPath.row]
-        cell.setup(music: music)
+        let cell = CardCell()
+        let card = cards[indexPath.row]
+        cell.setup(card: card)
         return cell
     }
 }
